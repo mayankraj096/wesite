@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Meritproglobal</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Fade-in effect for the entire body */
+    body {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    /* Define the fadeIn keyframe animation */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Fade-in for the contact form section */
+    section {
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    /* Sequential fade-in for form elements with a delay */
+    form label,
+    form input,
+    form textarea,
+    form button {
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    form label:nth-child(1),
+    form input:nth-child(2),
+    form input:nth-child(3),
+    form input:nth-child(4),
+    form textarea:nth-child(6),
+    form button:nth-child(7) {
+      animation-delay: 0.5s;
+    }
+
+    form label:nth-child(2),
+    form input:nth-child(3),
+    form input:nth-child(4),
+    form textarea:nth-child(6),
+    form button:nth-child(7) {
+      animation-delay: 1s;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contact Info Strip -->
+  <div class="contact-strip">
+    <span class="contact-left">Email: info@meritproglobal.com</span>
+    <span class="contact-right">Call Now: +91 92112 83371</span>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html">
+      <img src="images/logo2.png" alt="Meritproglobal Logo" class="logo" />
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="career.html">Career</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Contact Form Section -->
+  <section style="max-width: 800px; margin: 0 auto; padding: 40px 20px;">
+    <h2>How Can We Help You?</h2>
+    <p style="text-align: center; color: #555; font-size: 16px; line-height: 1.6;">
+      Write to us with your enquiries, questions or request a meeting with our experts to discuss your potential case. Our professionals will review and respond at the earliest.
+    </p>
+
+    <form action="send_mail.php" method="POST" style="display: grid; gap: 15px; margin-top: 30px;">
+      <label>Name</label>
+      <input type="text" name="name" required />
+
+      <label>Email</label>
+      <input type="email" name="email" required />
+
+      <label>Phone</label>
+      <input type="tel" name="phone" required />
+
+      <label>Country</label>
+      <input type="text" name="country" required />
+
+      <label>City</label>
+      <input type="text" name="city" required />
+
+      <label>Message</label>
+      <textarea name="message" rows="5" required></textarea>
+
+      <button type="submit" style="padding: 12px; background-color: #004080; color: white; border: none; font-weight: bold; border-radius: 4px; cursor: pointer;">
+        Submit
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Meritproglobal. All rights reserved.
+  </footer>
+
+</body>
+</html>

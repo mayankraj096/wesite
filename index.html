@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Meritproglobal</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .full-hero {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      display: block;
+      margin: 0;
+      padding: 0;
+      opacity: 0; /* Initially invisible */
+      animation: fadeInImage 2s ease-out forwards; /* Apply fade-in animation */
+    }
+
+    /* Keyframe animation for the image fade-in effect */
+    @keyframes fadeInImage {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .home-section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .home-card {
+      background: #f9f9f9;
+      padding: 20px;
+      border-left: 4px solid #004080;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+      line-height: 1.8;
+      font-size: 16px;
+      color: #444;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .home-card {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Contact Info Strip -->
+  <div class="contact-strip">
+    <span class="contact-left">Email: info@meritproglobal.com</span>
+    <span class="contact-right">Call Now: +91 92112 83371</span>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html">
+      <img src="images/logo2.png" alt="Meritproglobal Logo" class="logo" />
+    </a>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="career.html">Career</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Fullscreen Hero Image -->
+  <section>
+    <img src="images/globe.jpg" alt="Business team" class="full-hero" />
+  </section>
+
+  <!-- Text Section -->
+  <section class="home-section">
+    <div class="home-card">
+      <p>
+        At Meritproglobal, we understand the diverse and dynamic requirements of modern businesses. Whether you're seeking temporary or permanent recruitment services, payrolling, contractual or outsourcing manpower solutions, Recruitment Process Outsourcing (RPO), legal services, compliance management, or corporate training — we are here to provide you with customized, high-quality support.
+      </p>
+      <p>
+        Our team is committed to delivering results that align with your business objectives. With a focus on professionalism, integrity, and a deep understanding of your specific needs, we ensure that every solution we offer is executed with the utmost care and expertise.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>© 2025 Meritproglobal. All rights reserved.</footer>
+</body>
+</html>
